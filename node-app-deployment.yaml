@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: node-app-1
+  name: node-app
   labels:
-    app: node-app-1
+    app: node-app
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: node-app-1
+      app: node-app
   template:
     metadata:
       labels:
-        app: node-app-1
+        app: node-app
     spec:
       containers:
-      - name: node-app-1
+      - name: node-app
         image: us-central1-docker.pkg.dev/magnetic-tenure-452210-e5/webapp-repo/node-app1:v4
         ports:
         - containerPort: 3000
