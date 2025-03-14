@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: node-app
-        image: us-central1-docker.pkg.dev/magnetic-tenure-452210-e5/webapp-repo/node-app1:v4
+        image: us-central1-docker.pkg.dev/magnetic-tenure-452210-e5/webapp-repo/node-app2:v5
         ports:
         - containerPort: 3000
         env:
